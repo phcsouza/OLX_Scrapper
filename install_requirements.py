@@ -92,6 +92,10 @@ def main():
         # 4. Dependências para Carregamento de Variáveis de Ambiente
         check_package('dotenv', 'python-dotenv')
 
+        # 5. Dependências para Machine Learning
+        check_package('joblib')
+        check_package('sklearn', 'scikit-learn')
+
         print("\n✅ Todas as checagens e instalações de pacotes concluídas.")
 
     except Exception as e:
