@@ -96,6 +96,9 @@ def main():
         check_package('joblib')
         check_package('sklearn', 'scikit-learn')
 
+        # 6. Dependências para Tradução de Texto
+        check_package('deep_translator', 'deep-translator')
+
         print("\n✅ Todas as checagens e instalações de pacotes concluídas.")
 
     except Exception as e:

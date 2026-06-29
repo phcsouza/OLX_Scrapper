@@ -360,7 +360,7 @@ def loop_motor_sniper():
             try: conn.close()
             except Exception: pass
             
-        intervalo_aleatorio = random.randint(30, 300)
+        intervalo_aleatorio = random.randint(180, 300)
         log_sistema("Motor", f"Varredura finalizada. Próximo ciclo em {intervalo_aleatorio} segundos.")
         time.sleep(intervalo_aleatorio)
 
